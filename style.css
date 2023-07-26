@@ -32,3 +32,13 @@
   opacity: 1;
   width: 100%;
 }
+
+.crusader-height {
+  height: 75%;
+}
+
+.bug-background {
+  background-image: url('assets/Moth-Boss.png');
+  background-size: cover;
+  width: 100%;
+}
