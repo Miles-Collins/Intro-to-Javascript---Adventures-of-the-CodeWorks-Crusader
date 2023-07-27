@@ -5,6 +5,15 @@ let hasHealthPotion = false
 let bossName = "The Coding Virus"
 let bossHealth = 250
 
+function pageLoad() {
+  window.alert(`In the bustling city of Technopolis, where cutting-edge technology is the heartbeat of daily life, a hero known as The CodeWorks Crusader emerges to protect its digital utopia. Gifted with unparalleled coding skills and armed with a suit embedded with the latest technological advancements, The CodeWorks Crusader dedicates his life to safeguarding the city from any digital threats that may arise.\n
+  One day, Technopolis faces an unprecedented danger as a malevolent and elusive entity called The Coding Virus starts infiltrating the city's digital infrastructure. The virus, a sentient and adaptive being, swiftly evades conventional defenses and poses a grave risk to the very core of the metropolis. Panic spreads among the city's inhabitants as their digital lives hang in the balance.\n
+  Determined to quell the rising storm, The CodeWorks Crusader dives headfirst into the virtual world, unraveling the intricate patterns and evolving tactics of The Coding Virus. Each encounter presents a new challenge, pushing him to the limits of his coding prowess. `);
+  window.confirm("Will you have what it takes to vanquish The Coding Virus!?")
+}
+
+pageLoad()
+
 function drinkPotion() {
   if(!hasHealthPotion) {
     // EMOJI TEST_TUBE 🧪
@@ -13,6 +22,10 @@ function drinkPotion() {
 
   if(heroHealth >= 100) {
     return alert('You can not drink a potion if your health is full!')
+  }
+
+  if(heroHealth <= 0) {
+    return alert("You can't drink, if you're dead!")
   }
 
 
@@ -59,6 +72,10 @@ function attack() {
 
   //  drawCrusaderHealth()
   //  drawBossHealth()
+
+// TODO AFTER ALL THE FUNCTIONS ARE ADDED SHOW OFF THE DEBUGGER
+debugger
+
   heroAttack()
   bossAttack()
   healthPotion()
@@ -66,6 +83,14 @@ function attack() {
 }
 
 function heroAttack() {
+  // TODO ADD AT END TO SHOW MORE FUNCTIONALITY
+  // if(heroHealth <= 0) {
+  //   return alert("The CodeWorks Crusader is dead.")
+  // }
+
+  // if(bossHealth <= 0) {
+  //   return alert("The CodeWorks Crusader vanquished The Coding Virus, no reason to beat a dead horse.")
+  // }
     let heroAttack = Math.floor(Math.random() * 10);
     console.log("[HERO ATTACK]", heroAttack);
 

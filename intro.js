@@ -1,3 +1,34 @@
+// GO OVER ADDING SCRIPT TAG
+// UTILIZING THE JAVASCRIPT CONSOLE
+// VARIABLES USING VAR, LET, OR CONST
+let animal = "Bear"
+const species = "Mammal"
+console.log('[ANIMAL]:', animal + " [SPECIES]:", species)
+animal = "Snake"
+// species = "Reptile"
+console.log('[ANIMAL]:', animal + " [SPECIES]:", species)
+
+// GO OVER DATA SCOPE
+
+let fifty = 50
+
+if(fifty == 50) {
+  fifty = 20
+}
+
+// let twenty = 20
+
+// if(twenty == 20) {
+//   console.log('Is this working?')
+// }
+
+if(fifty == 50) {
+  console.log('That checks out.')
+} else if(fifty == 20) {
+  console.log("I don't think that math checks out.")
+}
+
+
 // THE DATA TYPES
 
 // STRINGS
@@ -86,3 +117,7 @@ let alphaObject = {
 }
 
 console.log('[ALPHA OBJECT]', alphaObject)
+
+
+// TODO MAKE SURE TO EXPLAIN PEMDAS
+//  parenthesis, exponents, multiplication, division, addition, subtraction. 
