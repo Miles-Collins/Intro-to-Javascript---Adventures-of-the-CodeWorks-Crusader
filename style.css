@@ -20,7 +20,12 @@
 .danger-text{
   color: red;
   font-weight: 800;
-   text-shadow: 0px 0px 5px black;
+   text-shadow: 0px 0px 2px white;
+}
+.success-text{
+  color: green;
+  font-weight: 800;
+   text-shadow: 0px 0px 2px white;
 }
 
 .attackButton {
@@ -35,10 +40,4 @@
 
 .crusader-height {
   height: 75%;
-}
-
-.bug-background {
-  background-image: url('assets/Moth-Boss.png');
-  background-size: cover;
-  width: 100%;
 }
