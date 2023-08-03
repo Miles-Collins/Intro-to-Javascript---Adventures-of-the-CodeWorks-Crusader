@@ -13,7 +13,17 @@ function pageLoad() {
 }
 
 pageLoad()
+function healthUp() {
+  heroHealth += 25
 
+   hasHealthPotion = false;
+
+   if (heroHealth > 100) {
+     heroHealth = 100;
+   }
+
+   drawCrusaderHealth();
+}
 function drinkPotion() {
   if(!hasHealthPotion) {
     // EMOJI TEST_TUBE 🧪
@@ -28,15 +38,9 @@ function drinkPotion() {
     return alert("You can't drink, if you're dead!")
   }
 
-
-  heroHealth += 25
-  hasHealthPotion = false
-
-  if(heroHealth > 100) {
-    heroHealth = 100
-  }
-
-  drawCrusaderHealth()
+setTimeout(healthUp, 3000);
+  // heroHealth += 25
+ 
 }
 
 // SECTION ATTACK
@@ -58,7 +62,7 @@ function attack() {
   //  }
   //  bossHealth -= heroAttack
 
-
+clear
   // MOVE TO BOSS ATTACK
   //  if(bossAttack == 0) {
   //    // EMOJI DASH 💨
@@ -74,7 +78,7 @@ function attack() {
   //  drawBossHealth()
 
 // TODO AFTER ALL THE FUNCTIONS ARE ADDED SHOW OFF THE DEBUGGER
-debugger
+// debugger
 
   heroAttack()
   bossAttack()
@@ -84,13 +88,14 @@ debugger
 
 function heroAttack() {
   // TODO ADD AT END TO SHOW MORE FUNCTIONALITY
-  // if(heroHealth <= 0) {
-  //   return alert("The CodeWorks Crusader is dead.")
-  // }
+  if(heroHealth <= 0) {
+    return alert("The CodeWorks Crusader is dead.")
+  }
 
-  // if(bossHealth <= 0) {
-  //   return alert("The CodeWorks Crusader vanquished The Coding Virus, no reason to beat a dead horse.")
-  // }
+  if(bossHealth <= 0) {
+    alert("The CodeWorks Crusader vanquished The Coding Virus, no reason to beat a dead horse.")
+    return
+  }
     let heroAttack = Math.floor(Math.random() * 10);
     console.log("[HERO ATTACK]", heroAttack);
 
@@ -108,6 +113,9 @@ function heroAttack() {
 }
 
 function bossAttack() {
+  if(bossHealth <= 0 || heroHealth <= 0) {
+    return
+  }
    let bossAttack = Math.floor(Math.random() * 15);
    console.log("[BOSS ATTACK]", bossAttack);
 
@@ -144,12 +152,21 @@ function drawCrusaderHealth() {
   document.getElementById(
     "crusader-health"
   ).innerText = `${heroHealth > 0 ? heroHealth : '☠️☠️☠️'}`;
+
+if(heroHealth <= 0) {
+  debugger
+  document.getElementById("codeworksCrusader").classList.add("deadCrusader");
+}
 }
 
 function drawBossHealth() {
   document.getElementById("boss-health").innerText = `${
     bossHealth > 0 ? bossHealth : "☠️☠️☠️"
   }`;
+
+  if(bossHealth <= 0) {
+    document.getElementById("codingVirus").classList.add("deadVirus")
+  }
 }
 
 // NOTE SHOW OFF JUST MAKING ONE DRAW
