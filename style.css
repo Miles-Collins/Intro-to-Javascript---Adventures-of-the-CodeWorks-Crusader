@@ -42,3 +42,14 @@
 .crusader-height {
   height: 75%;
 }
+
+.deadCrusader {
+  content: url("assets/Rip.png");
+  filter: grayscale(1);
+}
+
+.deadVirus {
+  /* content: url("assets/Rip.png"); */
+  filter: grayscale(1);
+  transform: scaleY(-1);
+}

@@ -1,6 +1,39 @@
 // GO OVER ADDING SCRIPT TAG
 // UTILIZING THE JAVASCRIPT CONSOLE
 // VARIABLES USING VAR, LET, OR CONST
+
+// [X] Adding a Script tag
+// Adding a Script tag: In HTML, a script tag is used to include JavaScript code into a web page.
+// [X] JavaScript Console
+// JavaScript Console: The JavaScript console is a tool used for debugging and testing code, providing a way to view and log output and errors.
+// [X] Variables using var let or const (Hoisting)
+// Variables using var, let, or const (Hoisting): JavaScript variables can be declared using var, let, or const. Variables declared with var are hoisted, while let and const have block scope.
+// [] Primitives/Value Types
+// Primitives/Value Types: JavaScript has primitive data types such as numbers, strings, booleans, null, undefined, and symbols.
+// [] Assignment vs Declaration
+// Assignment vs Declaration: Declaration refers to creating a variable, while assignment is giving it a value.
+// [] PEMDAS
+// PEMDAS: PEMDAS stands for Parentheses, Exponents, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right). It is the order of operations in arithmetic expressions.
+// [] Conditional Statements Truthy & Falsy
+// Conditional Statements Truthy & Falsy: In JavaScript, values can be evaluated as truthy or falsy in conditional statements.
+// [] Reference Types Objects & Arrays
+// Reference Types Objects & Arrays: Objects and arrays in JavaScript are reference types, which means they store references to their actual values rather than the values themselves.
+// [] Using debugger
+// Using debugger: The "debugger" keyword in JavaScript can be used to set breakpoints in code and facilitate debugging.
+// [] What is the DOM?
+// What is the DOM? The DOM (Document Object Model) is a programming interface for web documents, representing the structure and content of an HTML or XML document.
+// [] Drawing to the DOM
+// Drawing to the DOM: JavaScript can dynamically create and modify HTML elements on a webpage, changing its appearance and content.
+// [] What is an event (onclick)
+// What is an event (onclick): An event in JavaScript is an action or occurrence that happens on a webpage, such as a click (onclick), hover, or keypress, which can trigger specific code to run.
+// [] Functions & Parameters reference vs value and returns
+// Functions & Parameters reference vs value and returns: JavaScript functions can accept parameters by value or reference, affecting how they modify objects or primitives. Functions can also return values.
+// [] Passing parameters from the DOM
+// Passing parameters from the DOM: Data from the webpage's elements (e.g., forms) can be passed as parameters to JavaScript functions.
+// [] Timeouts
+// Timeouts: JavaScript setTimeout() function is used to delay the execution of code by a specified time interval.
+// Understanding these concepts is crucial for building interactive and dynamic web applications using JavaScript.
+
 let animal = "Bear"
 const species = "Mammal"
 console.log('[ANIMAL]:', animal + " [SPECIES]:", species)
